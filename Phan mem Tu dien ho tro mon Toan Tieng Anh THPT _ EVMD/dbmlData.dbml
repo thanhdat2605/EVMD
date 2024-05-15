@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EVMD" Class="dbmlDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-OJN7U69;Initial Catalog=EVMD;Integrated Security=True" SettingsObjectName="Phan_mem_Tu_dien_ho_tro_mon_Toan_Tieng_Anh_THPT___EVMD.Properties.Settings" SettingsPropertyName="EVMDConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Data" Member="Datas">
+    <Type Name="Data">
+      <Column Name="Word" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Meaning" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Usage" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Example" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MaGrade" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Lop10" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Lop11" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Lop12" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Grade_Data" Member="Grade" ThisKey="MaGrade" OtherKey="MaGrade" Type="Grade" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Grade" Member="Grades">
+    <Type Name="Grade">
+      <Column Name="GradeInt" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MaGrade" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Grade_Data" Member="Datas" ThisKey="MaGrade" OtherKey="MaGrade" Type="Data" />
+    </Type>
+  </Table>
+</Database>

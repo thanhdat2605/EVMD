@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="dbmlData">
+  <DataContextMoniker Name="/dbmlDataDataContext" />
+  <nestedChildShapes>
+    <classShape Id="63dcdefa-3af3-4bd7-8eed-fac42bd16e0d" absoluteBounds="3.5, 1, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/dbmlDataDataContext/Data" />
+      <nestedChildShapes>
+        <elementListCompartment Id="751936fb-beb9-46a4-a0fd-8aa54a511e8f" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="265e8c42-2c52-44ad-acbb-303b7b0bcf2e" absoluteBounds="0.75, 1.5, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/dbmlDataDataContext/Grade" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6b1630fa-8439-498d-9804-e71102d72390" absoluteBounds="0.765, 1.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.09699625651042); (3.5 : 2.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbmlDataDataContext/Grade/Grade_Data" />
+      <nodes>
+        <classShapeMoniker Id="265e8c42-2c52-44ad-acbb-303b7b0bcf2e" />
+        <classShapeMoniker Id="63dcdefa-3af3-4bd7-8eed-fac42bd16e0d" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
