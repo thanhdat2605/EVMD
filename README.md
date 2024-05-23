@@ -9,10 +9,3 @@ EVMD supports high school level Mathematics at high schools for the gifted or in
 
 ## Application Description
 * Each term includes audio pronunciation support and specific examples for practical application. Students can proactively study vocabulary relevant to their grade level by selecting their current grade.
-
-<p align="center">
-  <img src="/images/start.png" alt="Start screen of ChessAI" width=400/>
-</p>
-<p align="center">
-  <img src="/images/demoChess.png" alt="Start screen of ChessAI" width=400/>
-</p>
